@@ -17,8 +17,8 @@ y = my_data.iloc[:,2:3].values
 theta = np.zeros([1,3])
 
 # hyper params
-alpha = 0.01
-iters = 1000
+alpha = 0.005
+iters = 500
 
 
 # cost function
@@ -49,4 +49,5 @@ ax.plot(np.arange(iters), cost, 'r')
 ax.set_xlabel('Iterations')  
 ax.set_ylabel('Cost')  
 ax.set_title('Error vs. Training Epoch') 
+plt.grid(True)
 plt.show()
